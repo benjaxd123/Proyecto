@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ModoconductorPageRoutingModule } from './modoconductor-routing.module';
+import { PublicadoPageRoutingModule } from './publicado-routing.module';
 
-import { ModoconductorPage } from './modoconductor.page';
+import { PublicadoPage } from './publicado.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ModoconductorPageRoutingModule
+    PublicadoPageRoutingModule
   ],
-  declarations: [ModoconductorPage]
+  declarations: [PublicadoPage]
 })
-export class ModoconductorPageModule {}
+export class PublicadoPageModule {}

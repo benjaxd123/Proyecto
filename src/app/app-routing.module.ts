@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'registro',
     pathMatch: 'full'
   },
   {
@@ -44,10 +44,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/logeado/logeado.module').then( m => m.LogeadoPageModule)
   },
   {
-    path: 'modoconductor',
-    loadChildren: () => import('./pages/modoconductor/modoconductor.module').then( m => m.ModoconductorPageModule)
-  },
-  {
     path: 'historial',
     loadChildren: () => import('./pages/historial/historial.module').then( m => m.HistorialPageModule)
   },
@@ -71,6 +67,16 @@ const routes: Routes = [
     path: 'mensajes',
     loadChildren: () => import('./pages/mensajes/mensajes.module').then( m => m.MensajesPageModule)
   },
+  {
+    path: 'pasajeros',
+    loadChildren: () => import('./pages/pasajeros/pasajeros.module').then( m => m.PasajerosPageModule)
+  },
+  {
+    path: 'publicado',
+    loadChildren: () => import('./pages/publicado/publicado.module').then( m => m.PublicadoPageModule)
+  },
+
+
 ];
 
 @NgModule({

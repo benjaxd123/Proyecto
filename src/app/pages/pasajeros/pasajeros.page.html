@@ -1,0 +1,48 @@
+<ion-header color="primary">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/logeado">Volver</ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">
+      Pasajeros
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <br><br>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title class="ion-text-center">Vehículo</ion-card-title>
+    </ion-card-header>
+
+    <ion-text>
+      <h4 class="ion-text-center">
+        Asiento 1
+        <ion-button expand="block" (click)="mostrarAlerta()">Ver Cliente</ion-button>
+      </h4>
+      <h4 class="ion-text-center">
+        Asiento 2
+        <ion-button expand="block" (click)="mostrarAlerta()">Ver Cliente</ion-button>
+      </h4>
+      <h4 class="ion-text-center">
+        Asiento 3
+        <ion-button expand="block" (click)="mostrarAlerta()">Ver Cliente</ion-button>
+      </h4>
+
+      <h4 class="ion-text-center">
+        Asiento 4
+        <ion-button expand="block">Vacío</ion-button>
+      </h4>
+
+    </ion-text>
+
+    <div class="btn-home">
+    <ion-button routerLink="/homeconductor" expand="block" fill="clear" shape="round">
+      Ir al inicio
+    </ion-button>
+  </div>
+
+  </ion-card>
+</ion-content>

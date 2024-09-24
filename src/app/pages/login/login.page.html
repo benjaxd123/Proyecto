@@ -13,18 +13,24 @@
       <ion-card-title class="ion-text-center">Iniciar Sesión</ion-card-title>
     </ion-card-header>
   
+
     <ion-card-content>
+
+      <form #miForm="ngForm" (ngSubmit)="login()" >
+    
       <ion-item>
-        <ion-input  label="Nombre de usuario" label-placement="floating" fill="outline" placeholder=""></ion-input>
+        <ion-input [(ngModel)]="usr.username" name="username" label="Nombre de usuario" label-placement="floating" fill="outline" placeholder=""></ion-input>
       </ion-item>
     
       <ion-item>
-        <ion-input type="password" label="Contraseña" label-placement="floating" fill="outline" placeholder=""></ion-input>
+        <ion-input [(ngModel)]="usr.password" name="password" type="password" label="Contraseña" label-placement="floating" fill="outline" placeholder=""></ion-input>
       </ion-item>
     
       <div class="botones-login">
         <ion-button type="submit" expand="block" color="primary">Iniciar Sesión</ion-button>
       </div>
+
+    </form>
 
       <div class="ion-text-center">
         <a href="/registro">Registrarse</a>

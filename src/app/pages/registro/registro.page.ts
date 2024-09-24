@@ -38,9 +38,9 @@ export class RegistroPage implements OnInit {
       this.router.navigate(["/login"]);
     }
 
-    this.datos.agregarUsuario(this.usr); // Agregar el usuario al servicio
+    this.datos.agregarUsuario(this.usr); 
     console.log("Usuario registrado correctamente!");
-    this.router.navigate(['/home']); // Navegar a la página de inicio
+    this.router.navigate(['/home']); 
   }
   
 
