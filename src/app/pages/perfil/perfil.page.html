@@ -1,0 +1,42 @@
+<ion-header color="primary">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/logeado">Volver</ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">
+      Perfil
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-icon name="person-circle-outline" class="perfil"></ion-icon>
+    </ion-card-header>
+  
+    <ion-item>
+      <ion-label position="fixed">Nombre:</ion-label>
+      <ion-input value="Pepito" readonly></ion-input>
+      <ion-button fill="clear" slot="end">
+        <ion-icon name="pencil-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="fixed">Correo:</ion-label>
+      <ion-input value="yoelpepito@duocuc.cl" readonly></ion-input>
+      <ion-button fill="clear" slot="end">
+        <ion-icon name="pencil-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="fixed">Teléfono:</ion-label>
+      <ion-input value="+569 71384950" readonly></ion-input>
+      <ion-button fill="clear" slot="end">
+        <ion-icon name="pencil-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,14 @@
+.button-container {
+    display: flex;
+    justify-content: space-between; /* O space-around, según tu preferencia */
+    margin-top: 16px; /* Ajusta el espacio según sea necesario */
+  }
+  
+  .button-container ion-button {
+    flex: 1; /* Hace que los botones ocupen el mismo ancho */
+    margin-right: 8px; /* Espacio entre los botones */
+  }
+  
+  .button-container ion-button:last-child {
+    margin-right: 0; /* Elimina el margen del último botón */
+  }

@@ -23,13 +23,13 @@
     <ion-content>
       <ion-list>
         <ion-item routerLink="/home">Inicio</ion-item>
-        <ion-item routerLink="/registro">Registrarse</ion-item>
-        <ion-item routerLink="/login">Iniciar Sesión</ion-item>
+        <ion-item routerLink="/#">Historial de viajes</ion-item>
+        <ion-item routerLink="/#">Mensajería</ion-item>
+        <ion-item routerLink="/cerrarsesion">Cerrar Sesión</ion-item>
       </ion-list>
     </ion-content>
   </ion-menu>
   
-  <!-- Identificar el contenido principal -->
   <ion-router-outlet id="main-content"></ion-router-outlet>
 
   <ion-list [inset]="true" lines="full" mode="ios">
@@ -55,15 +55,6 @@
   </div>
   <br>
 
-  <div class="botones-inputs">
-  <ion-item>
-    <ion-searchbar animated="true" placeholder="Desde"></ion-searchbar>
-  </ion-item>
 
-  <ion-item>
-    <ion-searchbar animated="true" placeholder="Hasta"></ion-searchbar>
-  </ion-item>
-</div>
-
-  <ion-button routerLink="/registro" expand="block" class="search-button">Buscar Conductor</ion-button>
+  <ion-button routerLink="/publicarviaje" expand="block" class="search-button">Publicar viaje</ion-button>
 </ion-content>
