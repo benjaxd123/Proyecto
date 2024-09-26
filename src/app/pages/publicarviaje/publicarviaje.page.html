@@ -16,6 +16,8 @@
     </ion-card-header>
     <ion-card-content>
       <ion-list>
+
+        <form #miForm="ngForm" (ngSubmit)="publicarviaje()">
       <ion-text color="primary" class="ion-text-center">
         <h4>Desde</h4>
       </ion-text>
@@ -31,7 +33,7 @@
       </ion-text>
 
       <ion-item class="ion-text-center">
-        <ion-input  value=""></ion-input>
+        <ion-input   [(ngModel)]="viaje.Hasta" name="Hasta" value=""></ion-input>
       </ion-item>
 
       <br>
@@ -41,25 +43,29 @@
       </ion-text>
 
       <ion-item class="ion-text-center">
-        <ion-input  value=""></ion-input>
+        <ion-input  [(ngModel)]="viaje.Valor" name="Valor" type="number" value="" min="0"></ion-input>
       </ion-item>
 
       <br>
 
       <ion-text color="primary" class="ion-text-center">
-        <h4>Capacidad</h4>
+        <h4>Asientos</h4>
       </ion-text>
 
       <ion-item class="ion-text-center">
-        <ion-input  value=""></ion-input>
+        <ion-input  [(ngModel)]="viaje.Capacidad" name="Capacidad " type="number" value="" ></ion-input>
       </ion-item>
+
+ 
       
       <br>
 
       <div class="btn">
-      <ion-button routerLink="/publicado">Publicar viaje</ion-button>
+      <ion-button type="submit">Publicar viaje</ion-button>
     </div>
+  </form>
     </ion-list>
+    
 
 
     </ion-card-content>

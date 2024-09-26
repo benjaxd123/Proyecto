@@ -78,6 +78,10 @@ const routes: Routes = [
     path: 'historialconductor',
     loadChildren: () => import('./pages/historialconductor/historialconductor.module').then( m => m.HistorialconductorPageModule)
   },
+  {
+    path: 'viajesactivos',
+    loadChildren: () => import('./pages/viajesactivos/viajesactivos.module').then( m => m.ViajesactivosPageModule)
+  },
 
 
 

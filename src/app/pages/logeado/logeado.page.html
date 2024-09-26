@@ -31,7 +31,6 @@
     </ion-content>
   </ion-menu>
   
-  <!-- Identificar el contenido principal -->
   <ion-router-outlet id="main-content"></ion-router-outlet>
 
   <ion-list [inset]="true" lines="full" mode="ios">
@@ -57,15 +56,20 @@
   </div>
   <br>
 
+  <form #miForm="ngForm" (ngSubmit)="buscar()">
+
   <div class="botones-inputs">
+
   <ion-item>
-    <ion-searchbar animated="true" placeholder="Desde"></ion-searchbar>
+    <ion-searchbar [(ngModel)]="bsc.desde" name="desde" animated="true" placeholder="Desde"></ion-searchbar>
   </ion-item>
 
   <ion-item>
-    <ion-searchbar animated="true" placeholder="Hasta"></ion-searchbar>
+    <ion-searchbar [(ngModel)]="bsc.hasta"  name="hasta" animated="true" placeholder="Hasta"></ion-searchbar>
   </ion-item>
 </div>
 
-  <ion-button routerLink="/conductores" expand="block" class="search-button">Buscar Conductor</ion-button>
+  <ion-button type="submit"  expand="block" class="search-button">Buscar Conductor</ion-button>
+
+</form>
 </ion-content>
