@@ -12,6 +12,6 @@ export class HomeconductorPage{
 
 
   menuLateral() {
-    this.menu.open('mimenu');
+    this.menu.open('mimenu2');
   }
 }

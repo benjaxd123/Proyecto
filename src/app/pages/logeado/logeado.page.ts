@@ -12,7 +12,7 @@ export class LogeadoPage{
 
 
   menuLateral() {
-    this.menu.open('mimenu');
+    this.menu.open('mimenu3');
   }
 
 }

@@ -14,8 +14,9 @@ export class PasajerosPage{
 
 
     const alert = await this.alertController.create({
-      header:'Cliente 1:',
-      subHeader: 'Nombre: José Peréz',
+      header:'Nombre: Pepito Peréz',
+      subHeader: 'Correo: yoelpepito@duocuc.cl',
+      message: 'Teléfono: +569 71384950',
       backdropDismiss:false,
       buttons: [{
         text: "Aceptar",

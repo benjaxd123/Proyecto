@@ -1,13 +1,31 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>mensajes</ion-title>
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home">Volver</ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Información</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">mensajes</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Chats</ion-card-title>
+       </ion-card-header>
+  </ion-card>
+
+
+  <ion-card>
+    <ion-card-header class="header-container">
+      <ion-card-title class="nombres">Pepito Pérez</ion-card-title>
+      <ion-icon name="alert-circle" class="icono"></ion-icon>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header class="header-container">
+      <ion-card-title class="nombres">Marcos Rojas</ion-card-title>
+      <ion-icon name="alert-circle" class="icono"></ion-icon>
+    </ion-card-header>
+  </ion-card>
 </ion-content>

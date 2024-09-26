@@ -74,7 +74,11 @@ const routes: Routes = [
   {
     path: 'publicado',
     loadChildren: () => import('./pages/publicado/publicado.module').then( m => m.PublicadoPageModule)
+  },  {
+    path: 'historialconductor',
+    loadChildren: () => import('./pages/historialconductor/historialconductor.module').then( m => m.HistorialconductorPageModule)
   },
+
 
 
 ];
